@@ -1,6 +1,6 @@
-# 📚 Course Markdown Handout Template Repository
+# 📚 Engineering: Programming and Electronics
 
-This repository serves as a **template** for creating organized, Pandoc-powered course repositories that convert Markdown files into clean PDF handouts. It is designed for math, computer science, and other technical courses where instructors want full control over formatting and rendering using a lightweight, command-driven setup.
+This repository has within in it the course materials for a course in 
 
 ---
 
@@ -9,7 +9,7 @@ This repository serves as a **template** for creating organized, Pandoc-powered 
 This repository includes the following core directories:
 
 ```
-/Class_Notes
+/Unit_****
 ├── pdf/            # Rendered PDFs from your markdown notes
 ├── img/            # Images referenced in your markdown files
 ├── Lecture_01.md   # Example markdown files with embedded commands
@@ -24,93 +24,55 @@ This repository includes the following core directories:
 
 ---
 
-## How It Works
+## Units
 
-- All markdown files (`.md`) placed in folders that contain a `pdf/` subdirectory can be processed.
-- Files must include a `<!-- command: render -->` line to be turned into PDFs.
-- Optional commands allow for landscape formatting and grid overlays.
+### Unit 1: Electricity, Python, and Git (5 days)
 
----
+- **Day 1:** Intall GitHub Desktop, Thonny, introduce Git
+- **Day 2:** Continue with branches, commits, push, pull, pull requests. Intro Ohm's Law and electricity
+- **Day 3:** Intro to Electrical circuits. Make circuit without programming
+- **Day 4:** Upload MicroPython and start programming digital outputs
+- **Day 5:** Start project to create their own circuit and behaviors
+- **Day 6:** Finish Project
 
-## Supported Commands in `.md` Files
 
-| Command                         | Description                                                               |
-|----------------------------------|---------------------------------------------------------------------------|
-| `<!-- command: render -->`       | Required for the file to be converted into a PDF                          |
-| `<!-- command: grid -->`         | Adds a grid background using `grid-header.tex`                            |
-| `<!-- command: landscape -->`    | Renders the PDF in landscape orientation                                  |
+### Unit 2: Control and Input Making interactive Circuits (3 days)
 
-You can combine these in a single file.
+-**Day 1:**
+-**Day 2:**
+-**Day 3:**
 
----
 
-## Image Support
+### Unit 3: Motors, Servos, and Power (4 days)
 
-- Any images referenced using relative paths (e.g. `![Graph](img/example.png)`) will work as long as the image is in the same folder or a subfolder of the `.md` file.
-- This is supported via Pandoc’s `--resource-path`.
+-**Day 1:**
+-**Day 2:**
+-**Day 3:**
+-**Day 4:**
 
----
+### Unit 4: Design Project 1 (5 days)
 
-## How to Use the Renderer
+-**Day 1:**
+-**Day 2:**
+-**Day 3:**
+-**Day 4:**
+-**Day 5:**
 
-1. Open a terminal in the **top-level directory** of your course repo (same level as `tools/`).
-2. Run:
+### Unit 5: Data, Classes, and System Thinking (5 days)
 
-```bash
-python tools/render.py
-```
+-**Day 1:**
+-**Day 2:**
+-**Day 3:**
+-**Day 4:**
+-**Day 5:**
 
-The script will:
-- Look one level up from `tools/`
-- Find all subdirectories that contain a `pdf/` folder
-- Process `.md` files in those folders that include the `render` command
-- Save the PDF output to the respective `pdf/` folders
+### Unit 6: Final Design Challenge (5 days)
 
----
+-**Day 1:**
+-**Day 2:**
+-**Day 3:**
+-**Day 4:**
+-**Day 5:**
 
-## Requirements
+**Current Plan is 27 days (5 still to be determined)**
 
-- Python 3.6+
-- [Pandoc](https://pandoc.org/)
-- A working LaTeX installation (`pdflatex` recommended)
-
----
-
-## Using This Template
-
-To start a new course with this setup:
-
-1. Click **"Use this template"** on GitHub to create a new repo based on this structure.
-2. Rename folders as needed (e.g. `Class_Notes` → `Unit_1_Notes`)
-3. Add markdown handouts and images.
-4. Customize the `grid-header.tex` or replace it with your own.
-
----
-
-## Customization Tips
-
-- Add new directories for homework, projects, or labs — just include a `pdf/` subfolder to enable rendering.
-- Update `render.py` to include new features (e.g., templates, metadata support).
-- Track versioned syllabi or planning documents inside `Class_Organization`.
-
----
-
-## Example Markdown File
-
-```markdown
-<!-- command: render -->
-<!-- command: grid -->
-<!-- command: landscape -->
-
-# Day 1: Introduction to Functions
-
-## Objectives
-- Understand domain and range
-- Work with multiple representations
-```
-
----
-
-## Need Help?
-
-If you're unsure how to modify the renderer, open an issue or check the inline comments in `render.py` for guidance.
