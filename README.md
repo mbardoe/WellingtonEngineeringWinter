@@ -38,41 +38,41 @@ This repository includes the following core directories:
 
 ### Unit 2: Control and Input Making interactive Circuits (3 days)
 
--**Day 1:**
--**Day 2:**
--**Day 3:**
+- **Day 1:**
+- **Day 2:**
+- **Day 3:**
 
 
 ### Unit 3: Motors, Servos, and Power (4 days)
 
--**Day 1:**
--**Day 2:**
--**Day 3:**
--**Day 4:**
+- **Day 1:**
+- **Day 2:**
+- **Day 3:**
+- **Day 4:**
 
 ### Unit 4: Design Project 1 (5 days)
 
--**Day 1:**
--**Day 2:**
--**Day 3:**
--**Day 4:**
--**Day 5:**
+- **Day 1:**
+- **Day 2:**
+- **Day 3:**
+- **Day 4:**
+- **Day 5:**
 
 ### Unit 5: Data, Classes, and System Thinking (5 days)
 
--**Day 1:**
--**Day 2:**
--**Day 3:**
--**Day 4:**
--**Day 5:**
+- **Day 1:**
+- **Day 2:**
+- **Day 3:**
+- **Day 4:**
+- **Day 5:**
 
 ### Unit 6: Final Design Challenge (5 days)
 
--**Day 1:**
--**Day 2:**
--**Day 3:**
--**Day 4:**
--**Day 5:**
+- **Day 1:**
+- **Day 2:**
+- **Day 3:**
+- **Day 4:**
+- **Day 5:**
 
 **Current Plan is 27 days (5 still to be determined)**
 
