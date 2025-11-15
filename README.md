@@ -67,9 +67,9 @@ This repository has within in it the course materials for a course in
 
 ### Week 2
 
-* **Day 4**: Upload MicroPython and start programming digital outputs
-* **Day 5**: Start project to create their own circuit and behaviors
-* **Day 6**: Finish Project
+* **Day 4**: Upload MicroPython and start programming digital outputs (LEDs and pushbuttons)
+* **Day 5**: Learn more about Analog in devices (Potentiometers)
+* **Day 6**: Start 2 inputs and 3 outputs project
 
 **THANKSGIVING BREAK**
 
@@ -77,16 +77,16 @@ This repository has within in it the course materials for a course in
 
 *Start Unit 2*
 
-* **Day 6**: Wiring push buttons, pull up and push down resistors. If-else statements
-* **Day 7**: Quiz, Potentiometers, Analog vs. digital
+* **Day 6**: More on Terminology, prep quiz, finish project
+* **Day 7**: Quiz, Learn multimeter and oscilloscope
 
 ### Week 4
 
 *Finish Unit 2, Start Unit 3*
 
-* **Day 8**: Mini-project to incorporate outputs and inputs 
+* **Day 8**: Servos and libraries. Connect servo and potentiometer 
 * **Day 9**: Test 
-* **Day 10**: Servos and libraries. Connect servo and potentiometer
+* **Day 10**: 
 
 ### Week 5
 
