@@ -17,7 +17,8 @@ It acts as a **voltage divider**:
 - The middle pin provides a voltage between **0 V and 3.3 V**
 
 **Space for picture of potentiometer:**  
-[INSERT IMAGE HERE]
+
+![pot.png](img/pot.png)
 
 ---
 
@@ -35,7 +36,8 @@ Use a **10K ohm potentiometer** and wire it like this:
 - GP28 → ADC2  
 
 **Space for wiring picture:**  
-[INSERT IMAGE HERE]
+
+![pot_bb.png](img/pot_bb.png)
 
 ---
 
@@ -97,8 +99,7 @@ while True:
 
 This uses PWM (pulse-width modulation) to change brightness.
 
-**Space for LED wiring picture:**  
-[INSERT IMAGE HERE]
+![potled_bb.png](img/potled_bb.png)
 
 ---
 
