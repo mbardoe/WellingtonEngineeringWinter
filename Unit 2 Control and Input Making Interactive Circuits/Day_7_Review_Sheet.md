@@ -3,8 +3,7 @@
 # Review Sheet: PWM, ADC, Digital Inputs/Outputs, and Pico 2W Pinout
 
 
-
-![pico 2w pinout-small.png](../Unit%201%20Foundations%20Electricity%2C%20Python%2C%20and%20Git/img/pico%202w%20pinout-small.png)
+![PIco2W-pinout.jpg](../Unit%201%20Foundations%20Electricity%2C%20Python%2C%20and%20Git/img/PIco2W-pinout.jpg)
 
 ---
 
@@ -13,6 +12,7 @@
 You should know the purpose of the following:
 
 ### General Pin Categories
+
 - **3V3 (3.3 volts)**: Safe power output for small components and sensors.
 - **VSYS**: Main system power input. Usually supplied by USB or an external battery.
 - **VBUS**: A source of steady 5V power.
@@ -22,12 +22,14 @@ You should know the purpose of the following:
 - **PWM capable pins**: Any GPIO pin can output PWM in MicroPython.
 
 ### What you should understand from the pinout
+
 - Which pins support ADC (GPIO 26, 27, 28).
 - Where ground and power pins are located.
 - How to identify a GPIO number from the physical pin diagram.
 - That the Pico 2W adds WiFi but the basic pinout arrangement is unchanged.
 
 ### What you do NOT need to understand yet
+
 - UART  
 - SPI  
 - I2C details
@@ -55,6 +57,7 @@ state = button.value()
 ```
 
 The input value is either:
+
 - `1`: HIGH (3.3V)
 - `0`: LOW (0V)
 
@@ -68,6 +71,7 @@ A floating input does not know whether it should read 1 or 0. It may randomly ch
 To prevent this, we use a **pull-up** or **pull-down** resistor.
 
 ### Pull-down resistor
+
 - Connects the pin weakly to ground ($0$ volts).
 - Default state is LOW ($0$).
 - When you press a button that connects the pin to 3.3V, the input becomes HIGH.
@@ -78,6 +82,7 @@ button = Pin(14, Pin.IN, Pin.PULL_DOWN)
 ```
 
 ### Pull-up resistor
+
 - Connects the pin weakly to 3.3V.
 - Default state is HIGH ($1$).
 - Pressing the button connects the pin to ground, making it LOW.
@@ -103,6 +108,7 @@ button = Pin(14, Pin.IN, Pin.PULL_UP)
 PWM stands for Pulse Width Modulation.
 
 Used for:
+
 - Dimming LEDs
 - Speed control of motors
 - Generating analog-like output signals
@@ -117,6 +123,7 @@ p.duty_u16(32768)   # about 50 percent brightness
 ```
 
 Important ideas:
+
 - **Frequency**: how many times the PWM pattern repeats per second.
 - **Duty cycle**: the percentage of time the signal is HIGH in each cycle.
 - Duty ranges from `0` to `65535` in MicroPython.
@@ -136,12 +143,15 @@ value = sensor.read_u16()
 ```
 
 You should know:
+
 - ADC values are between `0` and `65535`.
 - `0` corresponds approximately to $0$ volts.
 - `65535` corresponds approximately to $3.3$ volts.
 - ADC pins are GPIO 26, 27, and 28.
 
 ---
+
+\newpage
 
 # Practice Quiz
 

@@ -5,6 +5,8 @@
 
 ---
 
+![pico 2w pinout.png](img/pico%202w%20pinout.png)
+
 # 1. Primer on Electricity
 
 ## Voltage (V)

@@ -54,11 +54,11 @@ Transition statement:
 
 Teacher-led walkthrough demonstrating:
 
-- The primary measurement modes:  
+- The primary measurement modes:
   - **DC Voltage (V with straight line)**  
   - **Resistance (Ohms symbol)**  
   - **Continuity (speaker symbol)**  
-- Proper probe placement (COM and VΩ ports).  
+- Proper probe placement (COM and V-Ohm ports).  
 - Safe handling and avoiding current-measurement mistakes.  
 - How to read measurement ranges and auto-ranging behavior.
 
@@ -122,7 +122,7 @@ Demonstration steps:
    ```
    Show on screen:  
    - Square wave shape  
-   - Amplitude (~3.3 V)  
+   - Amplitude ($\approx$ 3.3 V)  
    - Frequency (500 Hz)  
    - Duty cycle concept visually  
 
